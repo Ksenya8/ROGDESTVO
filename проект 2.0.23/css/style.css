@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: 'f1';
+    src:url(../fonts/новогодний.otf)
+}
+@font-face{
+    font-family: 'f2';
+    src:url(../fonts/обычный.ttf)
+}
+
+
+
+body{
+background: #123;
+}
+#container{
+    width: 350px;
+    border: 1px solid white;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+}
+#container div{
+    border: 1px dotted #fff;
+    overflow: hidden;
+    font-size:  42px;
+    text-align: center;
+    color: #fff;
+    font-family: 'f1';
+}   
+#container div img{
+    max-width: 100%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 35px #fff;
+    cursor: pointer;
+    transition: 0.7s;
+}
+#container div img:hover{
+    transform: scale(1.1,1.1);
+    transition: 1s;
+}
